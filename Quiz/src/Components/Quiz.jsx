@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './Quiz.css'
+import Home from "./Home";
 
 class Quiz extends Component{
     constructor(){
@@ -7,7 +8,8 @@ class Quiz extends Component{
     }
     render(){
         return(
-            <>
+            <div className="quiz-contain">
+            <Home />
             <h2 style={{textAlign:"center", fontSize:'4rem'}}>Question</h2>
             <p style={{textAlign:'left', marginLeft:'-500px'}}>1 of 15</p>
             <br />
@@ -29,7 +31,7 @@ class Quiz extends Component{
                 <div><button className="button2">Next</button></div>
                 <div><button className="button3">Quit</button></div>
             </div>
-            </>
+            </div>
         )
     }
 }
