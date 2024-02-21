@@ -8,6 +8,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Home />
+        <Quiz />
         <Result />
       </div>
     );
